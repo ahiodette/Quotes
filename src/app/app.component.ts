@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Quotes';
-  quote = 'Nothing is better than Praying'
+  // quote = 'Nothing is better than Praying'
+  quotes:string[];
+
+  constructor(){
+    this.quotes=['Nothing is better than pray', 'Time wasted never come', 'Failure comes from trials']
+  }
 }
