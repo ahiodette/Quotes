@@ -1,0 +1,13 @@
+.bod{
+    background-image: url('http://thepowerpointblog.com/media/blogs/all/2014/14_Mar/Quotes_22.jpg?mtime=1394322851');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 800px;
+    /* width: 1450px; */
+}
+.tit{
+    padding-top: 7%;
+}
+.q{
+    padding-left: 3%;
+}
