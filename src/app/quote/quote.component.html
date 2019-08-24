@@ -11,8 +11,17 @@
                     <li>
                         {{quote.name}}
                     </li>
+                    <button (click)="upvote(i)" class="btn btn-primary btn-xs">
+                        <i class="up"></i>{{ quote.upvotes }}<img src="https://clipart.info/images/ccovers/1513313791facebook-circle-heart-love-png.png"
+                            height="35" width="35">
+                    </button> &nbsp;&nbsp;
+                    <button (click)="downvote(i)" class="btn btn-danger btn-xs">
+                        <i class="down"></i>{{ quote.downvotes }} <img src="http://www.pngmart.com/files/5/Broken-Heart-PNG-Transparent-Image.png"
+                            height="35" width="35">
+                    </button> &nbsp;&nbsp;
+                    <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
 
-                    <button (click)='quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
+                    <!-- <button (click)='quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button> -->
 
                     <app-quote-detail *ngIf="quote.showDescription" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
 
