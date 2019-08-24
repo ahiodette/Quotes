@@ -18,5 +18,4 @@ export class QuoteFormComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
