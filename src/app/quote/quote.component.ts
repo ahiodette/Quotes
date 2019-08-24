@@ -35,27 +35,25 @@ export class QuoteComponent implements OnInit {
        0),
   ];
 
-  upvote(index) {
-    this.quotes[index].upvotes++;
-  }
-  downvote(index) {
-    this.quotes[index].downvotes++;
-  }
+  // upvote(index) {
+  //   this.quotes[index].upvotes++;
+  // }
+  // downvote(index) {
+  //   this.quotes[index].downvotes++;
+  // }
 
-  completeKote(isComplete, index) {
+  // completeQuote(isComplete, index) {
+  //   if (isComplete) {
+  //     this.quotes.splice(index, 1);
+  //   }
+  // }
+
+  deleteQuote(isComplete, index){
     if (isComplete) {
-      this.quotes.splice(index, 1);
-    }
-  }
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
 
-  deleteKote(isComplete, index) {
-    if (isComplete) {
-      let toDelete = confirm(
-        `Are you sure you want to delete ${this.quotes[index].name}`
-      );
-
-      if (toDelete) {
-        this.quotes.splice(index, 1);
+      if (toDelete){
+        this.quotes.splice(index,1)
       }
     }
   }
