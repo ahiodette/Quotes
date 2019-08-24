@@ -11,12 +11,15 @@
                     <li>
                         {{quote.name}}
                     </li>
-                    
-                    <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
+
+                    <button (click)='quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
 
                     <app-quote-detail *ngIf="quote.showDescription" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
 
                 </div>
+            </div>
+            <div class="col-md-6">
+                <app-quote-form></app-quote-form>
             </div>
         </div>
     </ul>

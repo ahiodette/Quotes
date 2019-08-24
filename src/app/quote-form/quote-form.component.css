@@ -1,0 +1,8 @@
+/* form{
+    background-image: linear-gradient(to right, blue,rgb(110, 248, 110));
+} */
+#newq{
+    border-radius: 15px 50px;
+    border: 1px solid blue;
+    background-image: linear-gradient(to right, rgb(46, 46, 238),rgb(110, 248, 110));
+}
