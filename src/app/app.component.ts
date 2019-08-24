@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Quote } from './quote';
+// import { from } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +9,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Quotes';
-  // quote = 'Nothing is better than Praying'
-  quotes:string[];
-
-  constructor(){
-    this.quotes=['Nothing is better than pray', 'Time wasted never come', 'Failure comes from trials']
-  }
+  quotes: Quote[] = [
+    {id:1, name: 'Nothing is better than Pray', author: 'Shakespare'},
+    {id:2, name: 'Failure comes from trials', author: 'Tom'},
+    {id:3, name: 'Time wasted never come again', author: 'Albert'}
+  ];
 }
+
+//   constructor(){
+//     this.quotes=['Nothing is better than pray', 'Time wasted never come', 'Failure comes from trials']
+//   }
+// }
