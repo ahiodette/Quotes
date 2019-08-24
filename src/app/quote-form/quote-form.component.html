@@ -2,30 +2,37 @@
 <div class="container-fluid" id="newq">
     <h2 class="text-center">Write a new Quote</h2>
     <hr>
-    <form>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
         <div class="form-group">
+            <div class=" ">
+                <label for="user">Name of writer</label>
+                <input type="text" class="form-control" id="user" [(ngModel)]="newQuote.user" name="user" #name="ngModel"
+                    required>
 
-            <label for="name">Name of writer</label>
-            <input type="text" required class="form-control" id="name">
 
+            </div>
+            <br>
+            <div class=" ">
+                <label for="name">Enter your quote</label>
+                <textarea class="form-control" id="name" rows="4" [(ngModel)]="newQuote.name" name="name" #description="ngModel"
+                    required></textarea>
+
+            </div>
+            <br>
+
+            <div class="">
+                <label for="author">Author of the quote</label>
+                <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #name="ngModel"
+                    required>
+            </div>
+            <br>
+            <div class=" ">
+                <label for="complete">Completion</label>
+                <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel"
+                    required>
+            </div>
         </div>
-        <div class="form-group">
-
-            <label for="description">Writeyour quote</label>
-            <textarea class="form-control" id="description" rows="4" required></textarea>
-
-        </div>
-        <div class="form-group">
-
-            <label for="name">Author of that quote</label>
-            <input type="text" required class="form-control" id="name">
-
-        </div>
-        <div class="form-group">
-            <label for="complete">Posting date</label>
-            <input type='date' id="complete" required>
-
-        </div>
-
+        <br>
+        <button type="Submit" id="hell" class="btn btn-success btn-lg">Add Quote</button>
     </form>
 </div>
