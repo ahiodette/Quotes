@@ -10,9 +10,9 @@ import { Quote } from './quote';
 export class AppComponent {
   title = 'Quotes';
   quotes: Quote[] = [
-    {id:1, name: 'Nothing is better than Pray', author: 'Shakespare'},
-    {id:2, name: 'Failure comes from trials', author: 'Tom'},
-    {id:3, name: 'Time wasted never come again', author: 'Albert'}
+    {id:1, name: 'Nothing is better than Pray', description: 'Shakespare'},
+    {id:2, name: 'Failure comes from trials', description: 'Tom'},
+    {id:3, name: 'Time wasted never come again', description: 'Albert'}
   ];
 }
 
