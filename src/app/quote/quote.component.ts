@@ -7,14 +7,62 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-quotes:Quote[]=[
-{id:1, name:'Nothing is better than Pray', description: 'Shakespare'},
-{id:2, name:'Failurecomes from trials', description: 'Tom'},
-{id:3, name:'Time wasted never come back', description: 'Albert'}
-];
+  quotes: Quote[] = [
+    new Quote(
+      1,
+      'Nothing is better than Pray',
+      'Odette',
+      'Shakespare',
+      new Date(2018, 3, 14),
+      0,
+      0),
+    new Quote(
+      2,
+      'Failure comes from trials',
+      'Aline',
+      'Tom',
+      new Date(2019,8,1),
+      0,
+      0),
+      
+    new Quote(
+      3, 
+      'Time wasted never come back',
+       'Albert',
+       'Thomson',
+       new Date(1990,2,14),
+       0,
+       0),
+  ];
+
+  upvote(index) {
+    this.quotes[index].upvotes++;
+  }
+  downvote(index) {
+    this.quotes[index].downvotes++;
+  }
+
+  completeKote(isComplete, index) {
+    if (isComplete) {
+      this.quotes.splice(index, 1);
+    }
+  }
+
+  deleteKote(isComplete, index) {
+    if (isComplete) {
+      let toDelete = confirm(
+        `Are you sure you want to delete ${this.quotes[index].name}`
+      );
+
+      if (toDelete) {
+        this.quotes.splice(index, 1);
+      }
+    }
+  }
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
