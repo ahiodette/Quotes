@@ -5,9 +5,12 @@
 body{
     font-family: 'EB Garamond', serif;
 }
-p,li{
+p,li,label{
     font-size: 20px;
 }
 li{
     font-weight: bold;
+}
+input{
+    font-size: 20px;
 }
