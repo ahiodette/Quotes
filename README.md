@@ -6,9 +6,9 @@ Quotes is an platform designed to to insert quotes and add the to the other quot
 
 ## Setup/Installation Requirements
 
-* Open your computer *
-* Connect to internet *
-* search for [ my github link]: (https://ahiodette.github.io/Quotes/) *
+* Open your computer 
+* Connect to internet 
+* search for [ my github link]: (https://ahiodette.github.io/Quotes/) 
 
 ## Platform Specifications
 
@@ -19,11 +19,11 @@ The user can choose to only read the quotes or also create his own quotes. The u
 The user can not identify the quote which has **many upvotes**. But sonner, hopefully, that issue will be fixed.
 
 ## Technologies Used
-* HTML *
-* CSS *
-* JavaScript *
-* Angular JS *
-* Terminal *
+* HTML 
+* CSS 
+* JavaScript 
+* Angular JS 
+* Terminal 
 
 ## Support and contact details
 
