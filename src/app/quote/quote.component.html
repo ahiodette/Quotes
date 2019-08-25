@@ -9,7 +9,7 @@
                 <div *ngFor='let quote of quotes;let i = index'>
 
                     <li>
-                        {{quote.name}}
+                        {{quote.author}}
                         <br>
                         <button (click)="upvote(i)" class="btn btn-primary btn-xs">
                                 <i class="up"></i>{{ quote.upvotes }}<img src="https://techjoomla.com/media/zoo/images/jlike_0110c7a06bb71e822e51e2856e577fda.png"
