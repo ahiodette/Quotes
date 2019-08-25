@@ -1,16 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Katibeh&display=swap');
 body{
-    font-family: 'EB Garamond', serif;
+    font-family: 'Katibeh', cursive;
 }
 p,li,label{
-    font-size: 20px;
+    font-size: 30px;
 }
 li{
     font-weight: bold;
 }
 input{
-    font-size: 20px;
+    font-size: 25px;
 }
