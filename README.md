@@ -1,5 +1,5 @@
 # Quotes
-### Quotes is an form designed to to insert quotes, January 29th 2019
+### Quotes is an form designed to to insert quotes, August 25th 2019
 
 ## Description
 Quotes is an platform designed to to insert quotes and add the to the other quotes of known authors. Through quote the user inputs his/her name and then insert a quote even the author of the that quote. The user also has an option of upvoting or downvoting a quote basing on the preference.
