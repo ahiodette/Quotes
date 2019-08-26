@@ -1,5 +1,5 @@
 # Quotes
-### Quotes is an form designed to to insert quotes, August 25th 2019
+#### Quotes is an form designed to to insert quotes, August 25th 2019
 
 ## Description
 Quotes is an platform designed to to insert quotes and add the to the other quotes of known authors. Through quote the user inputs his/her name and then insert a quote even the author of the that quote. The user also has an option of upvoting or downvoting a quote basing on the preference.
@@ -8,15 +8,18 @@ Quotes is an platform designed to to insert quotes and add the to the other quot
 
 * Open your computer 
 * Connect to internet 
-* search for [ my github link]: (https://ahiodette.github.io/Quotes/) 
+* search for [my github link](https://ahiodette.github.io/Quotes/) 
 
 ## Platform Specifications
 
 The user can choose to only read the quotes or also create his own quotes. The user is required to enter her/his name,and author, then the quote and date of creation. when the user hits the button add quote, he/she can now create the quote.The user also has an option to upvote or down vote a quote and highlight a quote when needed. The user can also delete a quote he/she doesn't like or even the own of his/her creation.
 
+## Link to the live site of Quotes:
+https://ahiodette.github.io/Quotes/
+
 ## Known Bugs
 
-The user can not identify the quote which has **many upvotes**. But sonner, hopefully, that issue will be fixed.
+The user can not distinguish the quote which has **many upvotes** from other quotes. But sonner, hopefully, that issue will be fixed.
 
 ## Technologies Used
 * HTML 
@@ -27,7 +30,7 @@ The user can not identify the quote which has **many upvotes**. But sonner, hope
 
 ## Support and contact details
 
-If needed more info, contact me on: E-mail: ahiode6@gmail.com 
+If needed more information, do not hesitate to contact me on: E-mail: ahiode6@gmail.com 
 
 ## License
 
